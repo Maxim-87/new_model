@@ -1,0 +1,103 @@
+@import './src/common/styles/variables';
+
+*{
+  box-sizing: border-box;
+}
+
+.mainPage {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1169px;
+  flex-direction: column;
+  font-family: $TextFamily;
+  font-size: 21px;
+  font-weight: normal;
+  color: $mainColor;
+}
+
+.header_mainPage {
+  display: flex;
+  width: 100%;
+}
+
+.titleHeader_MainPage {
+  display: flex;
+  color: $firstColor;
+  font-weight: bold;
+  max-width: 507px;
+  height: 34px;
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 90px;
+}
+
+.titleHeader_MainPage span {
+  color: $mainColor;
+  margin-left: 5px;
+
+}
+
+.button_mainPage {
+  max-width: 100px;
+  height: 20px;
+  line-height: 22px;
+  font-size: 12px;
+  color: $headerColor;
+  margin-left: 123px;
+  margin-top: 102px;
+  background: 0;
+  border: 0;
+  text-decoration: underline dotted;
+  cursor: pointer;
+}
+
+.modalWindow {
+  display: flex;
+  background-color: #EAEAEA;
+  width: 100%;
+  max-width: 503px;
+  height: 53px;
+  margin-left: 324px;
+  margin-top: 15px;
+  font-size: 14px;
+  position: relative;
+  color: $modalColor;
+  align-items: center;
+}
+
+.modalWindow span {
+  max-width: 347px;
+  height: 26px;
+  font-weight: normal;
+  line-height: 20px;
+  font-size: 14px;
+  margin-left: 13px;
+}
+
+.modalWindow::before {
+  content: '';
+  position: absolute;
+  background-color: $backgroundColor;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  margin-top: -53px;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 824px) {
+  .modalWindow {
+    margin-top: 40px;
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .button_mainPage {
+    margin-left: 0;
+  }
+}
+
+
+

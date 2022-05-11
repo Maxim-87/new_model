@@ -1,0 +1,163 @@
+@import './src/common/styles/variables';
+
+*{
+  box-sizing: border-box;
+}
+
+.superSelectBlock {
+  display: flex;
+  max-width: 559px;
+  height: 31px;
+  margin-left: 99px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  align-items: baseline;
+  line-height: 19px;
+  color: $mainColor;
+  position: relative;
+}
+
+//.superSelectBlock::after {
+//  content: '';
+//  position: absolute;
+//  width: 13px;
+//  height: 10px;
+//  background-image: url("../../assets/images/arrow.svg");
+//  top: 10px;
+//  right: 4px;
+//}
+
+.passwordBlock {
+  max-width: 916px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.label_superSelectBlock {
+  min-width: 188px;
+  margin-right: 35px;
+  height: 19px;
+  font-size: 21px;
+}
+
+.input_superSelectBlock {
+  width: 100%;
+  max-width: 336px;
+  height: 31px;
+  font-size: 16px;
+  border: $secondColor 1px solid;
+  appearance: none;
+  position: relative;
+}
+
+.superSelectBlock::after {
+  content: '';
+  position: absolute;
+  width: 13px;
+  height: 10px;
+  background-image: url("../../assets/images/arrow.svg");
+  top: 10px;
+  right: 10px;
+}
+
+.hr {
+  color: $hrColor;
+  border: 1px solid;
+  max-width: 990px;
+  margin-left: 90px;
+}
+
+.inputWrap {
+  display: flex;
+  width: 336px;
+  height: 55px;
+  flex-direction: column;
+}
+
+.passwordInput {
+  width: 335px;
+  height: 31px;
+  font-size: 16px;
+  border: $secondColor 1px solid;
+}
+
+.passwordBlock {
+  max-width: 916px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  align-items: baseline;
+}
+.passwordBlock::after {
+  display: none;
+}
+
+.secondLabel {
+  font-size: 12px;
+  color: $secondColor;
+  margin-left: 18px;
+}
+
+.emailBlock {
+  margin-bottom: 40px;
+}
+
+.agreeBlock {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  height: 19px;
+  margin-left: 100px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.label_agreeBlock {
+  margin-right: 112px;
+}
+
+.information_agreeBlock {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: $buttonColor;
+  color: $buttonTextColor;
+  font-size: 18px;
+  margin-left: 324px;
+  margin-right: 12px;
+  width: 119px;
+  height: 40px;
+  border: none;
+  margin-bottom: 120px;
+}
+
+.span_agreeBlock {
+  color: $secondColor;
+  font-size: 12px;
+  max-width: 355px;
+  height: 20px;
+}
+
+.errorPasswordInput {
+  border: $errorColor 1px solid;
+}
+
+.errorLabel {
+  color: $errorColor;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 865px) {
+  .passwordInput  {
+    max-width: 200px;
+  }
+  .input_superSelectBlock {
+    max-width: 200px;
+  }
+  .superSelectBlock::after {
+        right: 140px;
+      }
+}
